@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: trial-project-quota
+  namespace: mi-namespace
+spec:
+  hard:
+    dcount/deployments.apps: "3"
+    count/secrets: "2"
+    count/configmaps: "2"
+    count/services: "3"

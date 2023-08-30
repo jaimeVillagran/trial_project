@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: mi-namespace
+data:
+  SOME_BACKEND_KEY: "some-value"
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-config
+  namespace: mi-namespace
+data:
+  SOME_FRONTEND_KEY: "some-value"
